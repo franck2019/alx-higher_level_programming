@@ -19,7 +19,7 @@ if __name__ == '__main__':
 
     length = len(args.argv)
 
-    if length == 0:
+    if length != 3:
         print("Usage: {} <a> operator <b>".format(parser.prog))
         exit(1)
 
