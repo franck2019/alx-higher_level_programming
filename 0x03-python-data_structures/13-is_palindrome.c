@@ -12,8 +12,8 @@
  */
 int is_palindrome(listint_t **head)
 {
-	int *mylist = extract_int(head);
 	int size = size_listint(head);
+	int *mylist = extract_int(head, size);
 	int i, stop;
 
 	stop = size / 2;
@@ -51,10 +51,9 @@ int size_listint(listint_t **head)
  * @head: pointer to pointer of the first node of listint_t list
  * Return: a pointer to the adress of the list of int
  */
-int *extract_int(listint_t **head)
+int *extract_int(listint_t **head, int size)
 {
 	listint_t *current;
-	int size = size_listint(head);
 	int *mylist, i;
 
 	mylist = malloc(sizeof(int) * size);
