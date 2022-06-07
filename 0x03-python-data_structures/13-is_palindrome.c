@@ -3,8 +3,6 @@
 #include <string.h>
 #include "lists.h"
 
-//int size_listint(listint_t **head);
-//int *extract_int(listint_t **head);
 /**
  * is_palindrome - nction in C that checks
  * if a singly linked list is a palindrome.
@@ -30,7 +28,7 @@ int is_palindrome(listint_t **head)
 
 /**
  * size_listint - gives the size of a listint_t list
- * @head: pointer to pointer of the first node of listint_t list      
+ * @head: pointer to pointer of the first node of listint_t list
  * Return: the size of the list or 0 if the list is NULL
  */
 int size_listint(listint_t **head)
