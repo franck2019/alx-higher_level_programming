@@ -17,7 +17,7 @@ int is_palindrome(listint_t **head)
 	int i, stop;
 
 	stop = size / 2;
-	for (i = 0; i <= stop; i++)
+	for (i = 0; i < stop; i++)
 	{
 		if (mylist[i] != mylist[size - 1 - i])
 			return (0);
