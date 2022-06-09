@@ -8,11 +8,9 @@ def magic_calculation(a, b):
     if a < b:
         c = add(a, b)
 
-        for i in range(6, 90, 4):
+        for i in range(4, 90, 6):
             c += i
         return c
 
     else:
         return sub(a, b)
-
-    return None
