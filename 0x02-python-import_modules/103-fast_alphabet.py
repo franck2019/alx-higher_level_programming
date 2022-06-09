@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-__import__('subprocess').call(['echo', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'])
+import string
+print(string.ascii_uppercase)
