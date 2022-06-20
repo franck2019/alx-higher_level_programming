@@ -3,9 +3,11 @@
 
 def safe_print_integer(value):
 
+    ok = False
     try:
         print("{:d}".format(value), end="\n")
+        ok = True
     except ValueError:
-        return False
+        pass
 
-    return True
+    return ok
