@@ -71,12 +71,11 @@ class Square:
         if ss == 0:
             print()
         else:
-            if space_before_loop:
-                print("\n" * space_before_loop, end="")
+            print("\n" * space_before_loop, end="")
 
             for i in range(ss):
                 for k in range(space_in_loop):
-                    print(" ",end="")
+                    print(end=" ")
 
                 for j in range(ss):
                     print("#", end="")
