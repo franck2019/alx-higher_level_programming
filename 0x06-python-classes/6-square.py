@@ -76,7 +76,7 @@ class Square:
 
             for i in range(ss):
                 for k in range(space_in_loop):
-                    print(end=" ")
+                    print(" ",end="")
 
                 for j in range(ss):
                     print("#", end="")
