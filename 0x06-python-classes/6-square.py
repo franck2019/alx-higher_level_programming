@@ -72,7 +72,7 @@ class Square:
             print()
         else:
             if space_before_loop:
-                print()
+                print("\n" * space_before_loop, end="")
 
             for i in range(ss):
                 for k in range(space_in_loop):
