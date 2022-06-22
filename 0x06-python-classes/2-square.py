@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
-"""square module"""
+"""
+This module defines a Class Square with private attribute size after\nvalidating the size.
+"""
 
 
 class Square:
@@ -16,6 +18,6 @@ class Square:
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
-            raise ValueError("Size must be >= 0")
+            raise ValueError("size must be >= 0")
 
         self.__size = size
