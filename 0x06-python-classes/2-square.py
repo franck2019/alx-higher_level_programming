@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 """
-This module defines a Class Square with private attribute size after\nvalidating the size.
+This module defines a Class Square with private attribute size
+after validating the size.
 """
 
 
