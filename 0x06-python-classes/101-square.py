@@ -7,7 +7,12 @@ after validating the size.
 
 
 class Square:
-    """This class defines a square."""
+    """This class defines a square.
+
+    Attributes:
+              __size (int): The size of the square (private)
+              __position (int, int): The position of the square (private)
+    """
 
     def __init__(self, size=0, position=(0, 0)):
         """Initialize a square
@@ -44,7 +49,7 @@ class Square:
         sil = (self.__position)[0]  # sil stands for space inside loop
 
         if ss == 0:
-            res = "\n"
+            res = ""
         else:
             res += "\n" * sbl
 
