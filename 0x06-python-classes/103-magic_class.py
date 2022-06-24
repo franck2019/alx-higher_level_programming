@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-
 """The magic Module."""
-
-
 import math
 
 
@@ -28,7 +25,7 @@ class MagicClass:
 
     def area(self):
         """Returns the area of the circle."""
-        return (self.__radius ** 2) * math.pi
+        return self.__radius ** 2 * math.pi
 
     def circumference(self):
         """Returns the circumference of the circle."""
