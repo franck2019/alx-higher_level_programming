@@ -9,7 +9,7 @@ class MagicClass:
     Attributes:
     __radius(int or float): The radius of the circle (private).
     """
-    def __init__(self, radius):
+    def __init__(self, radius=0):
         """Initializes a circle.
 
         Args:
