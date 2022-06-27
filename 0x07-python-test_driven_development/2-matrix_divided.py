@@ -8,7 +8,7 @@ This Module has a function that divides all elements of a matrix.
 def matrix_divided(matrix, div):
     """Returns a new matrix
 
-    Args: 
+    Args:
         matrix (list of lists of integers/floats): The matrix.
         div (number(int or float)): Number to use to divide every element.
     """
@@ -20,14 +20,16 @@ def matrix_divided(matrix, div):
         raise ZeroDivisionError('division by zero')
 
     if not is_conformed_matrix(matrix):
-        raise TypeError('matrix must be a matrix (list of lists) of integers/floats')
+        raise TypeError('matrix must be a matrix (list of lists) '
+                        ' of integers/floats')
 
     if not elements_have_same_size(matrix):
         raise TypeError('Each row of the matrix must have the same size')
-        
+
     m = list(map(lambda x: list(map(lambda y: round(y/div, 2), x)), matrix))
 
     return m
+
 
 def is_conformed_matrix(matrix):
     """Helper function that check if the matrix is a list of lists
@@ -57,8 +59,9 @@ def is_conformed_matrix(matrix):
                 return is_conformed
 
     is_conformed = True
-    
+
     return is_conformed
+
 
 def elements_have_same_size(matrix):
     """Helper function that checks if every
