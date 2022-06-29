@@ -18,4 +18,4 @@ class LockedClass:
             sms = "'LockedClass' object has no attribute '{}'"
             raise AttributeError(sms.format(attr_name))
 
-        self.__dict__[attr_name] = attr_value
+        self.__dict__["first_name"] = attr_value
