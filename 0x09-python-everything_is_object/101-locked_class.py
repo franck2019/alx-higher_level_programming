@@ -14,9 +14,8 @@ class LockedClass:
             attr_name: the name of the attribute
             attr_value: the value of the attribute."""
 
-        if attr_name != "first_name":
-            sms = "'LockedClass' object has no attribute '{}'"
-            raise AttributeError(sms.format(attr_name))
-        else:
+        if attr_name == "first_name":
             self.__dict__[attr_name] = attr_value
-
+        else:
+            sms = f"'LockedClass' object has no attribute '{attr_name}'"
+            raise AttributeError(sms)
