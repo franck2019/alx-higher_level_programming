@@ -14,7 +14,7 @@ class LockedClass:
             attr_name: the name of the attribute
             attr_value: the value of the attribute."""
 
-        if attr_name != "first_name":
+        if attr_name != "first_name" and attr_name not in vars(self):
             sms = "'LockedClass' object has no attribute '{}'"
             raise AttributeError(sms.format(attr_name))
 
