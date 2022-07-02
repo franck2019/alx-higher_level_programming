@@ -126,10 +126,10 @@ class Rectangle:
             rect_1 (obj:Rectangle): the first rectangle.
             rect_2 (obj:Rectangle): the second rectangle.
         """
-        if not isinstance(rect_1, Rectangle):
+        if not type(rect_1) is not Rectangle:
             TypeError('rect_1 must be an instance of Rectangle')
 
-        if not isinstance(rect_2, Rectangle):
+        if not type(rect_2) is not Rectangle:
             TypeError('rect_2 must be an instance of Rectangle')
 
         if rect_1.area() == rect_2.area():
