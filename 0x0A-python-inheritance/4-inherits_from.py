@@ -10,7 +10,7 @@ def inherits_from(obj, a_class):
     Args:
         obj (:obj): an object
         a_class: a class
-    
+
     N.B: if an oject is an instance of a class that inherited from,
     that means the type of this object is different from the class
     """
