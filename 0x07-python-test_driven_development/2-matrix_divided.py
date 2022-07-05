@@ -20,7 +20,7 @@ def matrix_divided(matrix, div):
         raise ZeroDivisionError('division by zero')
 
     if not is_conformed_matrix(matrix):
-        raise TypeError('matrix must be a matrix (list of lists) '
+        raise TypeError('matrix must be a matrix (list of lists)'
                         ' of integers/floats')
 
     if not elements_have_same_size(matrix):
@@ -45,8 +45,7 @@ def is_conformed_matrix(matrix):
 
     """verify if every sublist of matrix:
         # has the type list
-        # has the same size
-        and if elements of sublist are integers or floats numbers
+        # and if elements of sublist are integers or floats numbers
     """
 
     for i in range(len(matrix)):
