@@ -11,7 +11,8 @@ def read_file(filename=""):
     Returns:
         Always nothing.
     """
-    with open(filename) as f:
-        result = f.read()
+    if filename != "" and type(filename) == str:
+        with open(filename, 'r') as f:
+            result = f.read()
 
-    print(result)
+        print(result, end="")
