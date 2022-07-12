@@ -10,7 +10,7 @@ filename = 'add_item.json'
 
 try:
     old_content = load_from_json_file(filename)
-except Exception:
+except FileNotFoundError:
     save_to_json_file([], filename)
 else:
     args = sys.argv[1:]
