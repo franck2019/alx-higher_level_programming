@@ -8,7 +8,7 @@ import os
 def stat_1(a_dict):
     """print the total size of the file per status code"""
     total = 0
-
+    a_dict = dict(sorted(a_dict.items()))
     for code, value in a_dict.items():
         total += value
 
@@ -17,12 +17,13 @@ def stat_1(a_dict):
 
 def stat_2(a_dict):
     """Print stat for status code and ocurrence"""
+    a_dict = dict(sorted(a_dict.items()))
     for key, value in a_dict.items():
         print(f"{key}: {value}")
 
 
-status_file = dict()
-status_ocurrence = dict()
+status_file = {}
+status_ocurrence = {}
 
 counter_10 = 0
 
