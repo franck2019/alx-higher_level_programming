@@ -6,7 +6,7 @@ import os
 
 
 def stat_1(a_dict):
-
+    """print the total size of the file per status code"""
     total = 0
 
     for code, value in a_dict.items():
@@ -16,7 +16,7 @@ def stat_1(a_dict):
 
 
 def stat_2(a_dict):
-
+    """Print stat for status code and ocurrence"""
     for key, value in a_dict.items():
         print(f"{key}: {value}")
 
